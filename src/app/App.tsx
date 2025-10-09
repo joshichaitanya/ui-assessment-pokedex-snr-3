@@ -20,6 +20,7 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/pokemon" element={<ListPage />} />
+                  <Route path="/pokemon/:id" element={<ListPage />} />
                 </Routes>
               </div>
             </div>

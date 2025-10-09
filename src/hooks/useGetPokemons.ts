@@ -1,11 +1,7 @@
 import { useMemo } from 'react';
-import { useQuery } from '@apollo/react-hooks';
 import gql from 'graphql-tag';
-
-export type Pokemon = {
-  id: string;
-  name: string;
-};
+import { useQuery } from '@apollo/client';
+import { Pokemon } from './types';
 
 export type PokemonOption = {
   value: Pokemon['id'];
@@ -17,6 +13,9 @@ export const GET_POKEMONS = gql`
     pokemons(first: $first) {
       id
       name
+      number
+      types
+      image
     }
   }
 `;

@@ -7,6 +7,7 @@ interface NavOptionProps {
   to: string;
   icon: string;
   name: string;
+  children: string
 }
 
 export const NavOption: React.FC<NavOptionProps> = ({
