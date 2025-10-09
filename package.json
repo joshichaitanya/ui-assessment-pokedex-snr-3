@@ -29,7 +29,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "tsc": "tsc",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "browserslist": {
